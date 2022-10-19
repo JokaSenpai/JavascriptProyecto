@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(mdb-ui-kit/css/mdb.min.css);
+
+/* body {
+    font: 14px/22px "Lato", Arial, sans-serif;
+    background: #6394f8;
+}
+
+.lighter-text {
+    color: #abb0be;
+}
+
+.main-color-text {
+    color: #6394f8;
+}
+
+nav {
+    padding: 20px 0 40px 0;
+    background: #f8f8f8;
+    font-size: 16px;
+}
+
+nav .navbar-left {
+    float: left;
+}
+
+nav .navbar-right {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+nav ul li a {
+    color: #777;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: black;
+} */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#productos {
+    display: flex;
+}
+
+#productos img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.carrito {
+    position: relative;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #fa709a;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(250, 112, 154, 0.5), rgba(254, 225, 64, 0.5));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(250, 112, 154, 0.5), rgba(254, 225, 64, 0.5))
+}
+
+
+.container-presentacion {
+    display: inline-flex;
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+}
+
+.contPres {
+    width: 50%;
+    float: left;
+    /* border: 2px solid red; */
+}
+
+.contPres h1{
+    font-size: 100px;
+}
+.contPres p{
+    font-size: 24px;
+    font-style: italic;
+    color: #010101
+}
