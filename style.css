@@ -85,3 +85,8 @@ nav ul li a:hover {
     font-style: italic;
     color: #010101
 }
+
+.testCase{
+    display: inline-flex;
+
+}
