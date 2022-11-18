@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChupeShop</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <!--  Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ChupeShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/index.html">Inicio
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Categorias</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./categorias.html">Cervezas</a>
+              <a class="dropdown-item" href="./categorias.html">Whiskies</a>
+              <a class="dropdown-item" href="./categorias.html">Variados</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./categorias.html">Sin Alcohol</a>
+            </div>
+          </li>
+        </ul>
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i href="#" class="fa-solid fa-cart-shopping carrito" id="carrito"><span id="cart_menu_num carroNumero"
+          data-action="cart-can" class="badge rounded-circle">0</span></i>
+      </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin Navbar -->
+
+<div class="cerveBackground">
+    <h2 class="cerveText">Cervezas</h2>
+  <div id="cerveza">
+  </div>  
+</div>
+
+<div class="whiskyBackground">
+    <h2 class="whiskyText">Whiskies</h2>
+  <div id="whisky">
+  </div>  
+</div>
+
+<div class="variadosBackground">
+    <h2 class="variadoText">Variados</h2>
+  <div id="variados">
+  </div>  
+</div>
+
+<div class="sinAlcoholBackground">
+    <h2 class="bebTitulo">Bebidas sin Alcohol</h2>
+  <div id="sinAlcohol">
+  </div>  
+</div>
+    
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="carrito-body">
+          
+          </div>
+          <p id="precioTotal">
+
+
+          </p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="finalizar-compra">Finalizar compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Final Modal -->
+  
+  
+  
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+  
+      <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com"><i class="fab fa-github"></i></a>
+  
+    </div>
+  
+    <div class="footer-left">
+  
+      <p class="footer-links">
+        <a class="link-1" href="#">Inicio</a>
+  
+        <a href="#">Cervezas 🍺</a>
+  
+        <a href="#">Whisky 🥃</a>
+  
+        <a href="#">Variados 🍸</a>
+        
+        <a href="#">Sin Alcohol 🥤</a>
+  
+        <a href="#">Contacto</a>
+      </p>
+  
+      <p>ChupeShop &copy; 2022</p>
+    </div>
+  
+  </footer>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/carrito.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

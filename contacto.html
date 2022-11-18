@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>ChupeShop</title>
 </head>
 
@@ -53,72 +53,65 @@
           <i href="#" class="fa-solid fa-cart-shopping carrito" id="carrito"><span id="cart_menu_num carroNumero"
               data-action="cart-can" class="badge rounded-circle">0</span></i>
         </button>
-
       </div>
     </div>
   </nav>
   <!-- Fin Navbar -->
 
 
-  <!-- Presentación web -->
 
-  <div class="banner-content container-presentacion">
+  <h1>Contactate con nosotros!</h1>
 
-    <div class="contPres">
 
-      <h1>ChupeShop <br>Booze web! </h1>
-      <p>Todas las buenas historias comienzan con un buen trago. En nuestra web podrás encontrar las mejores
-        opciones en bebidas espirituosas a un precio de calidad 🍸
 
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre y Apellido</label>
+      <input type="text" class="form-control" placeholder="Ingresa nombre y apellido">
     </div>
 
-    <div class="contPres">
-
-      <img src="./Imgs/variados/chupitosPresentacion.jpg" class="imgPresentacion" alt="">
-
-    </div>
-
-  </div>
-  <!-- fin presentacion web -->
-
-  <div>
-    <h2>Encuentra nuestros productos de oferta</h2>
-    <div id="productos">
-
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">No compartiremos con nadie mas tu Email</small>
 
     </div>
-  </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Deseo que me envien correos con promociones</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
 
-  <div id="cerveza"></div>
 
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" id="carrito-body">
-         
-        </div>
-        <p id="precioTotal">
-
-        </p>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" id="finalizar-compra">Finalizar compra</button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="carrito-body">
+           ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Finalizar compra</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  
+  <!-- Final Modal -->
 
-<!-- Final Modal -->
-
-
-  <!-- Inicio Footer  -->
   <footer class="footer-distributed">
 
     <div class="footer-right">
@@ -150,8 +143,6 @@
     </div>
 
   </footer>
-
-  <!-- Fin Footer -->
 
 
   <script src="./js/index.js"></script>

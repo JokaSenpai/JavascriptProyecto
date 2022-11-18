@@ -1,53 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(mdb-ui-kit/css/mdb.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-/* body {
-    font: 14px/22px "Lato", Arial, sans-serif;
-    background: #6394f8;
-}
-
-.lighter-text {
-    color: #abb0be;
-}
-
-.main-color-text {
-    color: #6394f8;
-}
-
-nav {
-    padding: 20px 0 40px 0;
-    background: #f8f8f8;
-    font-size: 16px;
-}
-
-nav .navbar-left {
-    float: left;
-}
-
-nav .navbar-right {
-    float: right;
-}
-
-nav ul li {
-    display: inline;
-    padding-left: 20px;
-}
-
-nav ul li a {
-    color: #777;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: black;
-} */
 
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --max: 18rem
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+
+    
+}
+
+.card {
+    width: var(--max)
+    }
+
+.card-img-top {
+    width: 100%;
+    max-width: var(--max);
+    height: calc(var(--max));
+    object-fit: cover;
+            } 
 
 #productos {
     display: flex;
@@ -59,11 +42,11 @@ nav ul li a:hover {
     object-fit: contain;
 }
 
-.carrito {
+/* .carrito {
     position: relative;
     padding-top: 20px;
     padding-right: 20px;
-}
+} */
 
 
 .container-presentacion {
@@ -90,3 +73,223 @@ nav ul li a:hover {
     display: inline-flex;
 
 }
+
+#cerveza {
+display: flex;
+}
+#cerveza  img{
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+#whisky {
+    display: flex;
+    }
+#whisky  img{
+        max-height: 300px;
+        max-width: 300px;
+        object-fit: cover;
+    }
+
+#variados { 
+    display: flex;
+}
+
+#variados img {
+
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+#sinAlcohol {
+display: flex;
+
+}
+
+#sinAlcohol img {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+
+}
+
+#sinAlcohol .precioTexto{
+    text-align: center;
+    padding-bottom: 35px;
+}
+#sinAlcohol h5{
+    text-align: center;
+}
+#cerveza .precioTexto{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#cerveza h5{
+    text-align: center;
+}
+
+#whisky .precioTexto{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#whisky h5{
+    text-align: center;
+}
+
+#variados .precioTexto{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#variados h5{
+    text-align: center;
+}
+
+.cerveBackground {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs2VXx7LEWSph7joHhIFtGQoA8a4fUzL1yJYkvjDZvCEN9GO09_M6sFUvA3i7J9T3EeaU&usqp=CAU");
+}
+
+.whiskyBackground {
+    background-image: url("https://media.istockphoto.com/id/673943768/photo/abstract-background.jpg?s=612x612&w=0&k=20&c=jL0kBy4B28hrWnLhGrcKY1NEM1ag4EtKjkjuBXGoE8w=");
+}
+
+.variadosBackground {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/782/453/177/alcohol-belvedere-vodka-wallpaper-preview.jpg");
+}
+
+.sinAlcoholBackground{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.cerveText {
+ text-align: center;
+
+}
+
+.whiskyText {
+    text-align: center;
+}
+.variadoText{
+    text-align: center;
+    color: whitesmoke;
+}
+.bebTitulo{
+    text-align: center;
+    color: wheat;
+
+    
+}
+
+
+      /* Inicio  Footer */
+  .footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 1em;
+    align-self: flex-start;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+  .footer-links a {
+    font-family: Roboto;
+  }
+
+        /* Fin Footer */
+
+        /* Carrito  inicio */
+
+
+
+    .carrito span {
+        background: red;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        color: white;
+        padding: 2px;
+        left: 20%;
+      }
+      

@@ -1,0 +1,293 @@
+{
+
+    "cervezas": [
+        {
+            "id": 1,
+            "nombre": "Budweiser",
+            "precio": 120,
+            "imagen": "imgs/cervezas/cervezaBudweiser.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 2,
+            "nombre": "Heineken",
+            "precio": 134,
+            "imagen": "imgs/cervezas/cervezaHeineken.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 3,
+            "nombre": "Pilsen",
+            "precio": 100,
+            "imagen": "imgs/cervezas/cervezaPilsen.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 4,
+            "nombre": "Stella Artois",
+            "precio": 122,
+            "imagen": "imgs/cervezas/cervezaStellaArtois.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 5,
+            "nombre": "Estrella Galicia",
+            "precio": 130,
+            "imagen": "imgs/cervezas/cervezaEstrellaGalicia.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 6,
+            "nombre": "Corona",
+            "precio": 110,
+            "imagen": "imgs/cervezas/cervezaCorona.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 7,
+            "nombre": "Negra Modelo",
+            "precio": 150,
+            "imagen": "imgs/cervezas/cervezaNegraModelo.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 8,
+            "nombre": "Delirium Tremens",
+            "precio": 180,
+            "imagen": "imgs/cervezas/cervezaDeliriumTremens.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 9,
+            "nombre": "Patagonia",
+            "precio": 115,
+            "imagen": "imgs/cervezas/cervezaPatagonia.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 10,
+            "nombre": "Miller",
+            "precio": 126,
+            "imagen": "imgs/cervezas/cervezaMiller.jpg",
+            "cantidad": 1
+        }
+    ],
+    "whisky": [
+        {
+            "id": 11,
+            "nombre": "Johnnie Walker Red",
+            "precio": 550,
+            "imagen": "imgs/whiskies/johnnieRed.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 12,
+            "nombre": "Johnnie Walker Black",
+            "precio": 1000,
+            "imagen": "imgs/whiskies/johnnieBlack.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 13,
+            "nombre": "Johnnie Walker Double Black",
+            "precio": 1400,
+            "imagen": "imgs/whiskies/johnnieDoubleBlack.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 14,
+            "nombre": "Johnnie Walker Green",
+            "precio": 1950,
+            "imagen": "imgs/whiskies/johnnieGreen.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 15,
+            "nombre": "Johnnie Walker Gold",
+            "precio": 3000,
+            "imagen": "imgs/whiskies/johnnieGold.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 16,
+            "nombre": "Johnnie Walker Platinum",
+            "precio": 3750,
+            "imagen": "imgs/whiskies/johnniePlatinum.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 17,
+            "nombre": "Johnnie Walker Blue",
+            "precio": 7000,
+            "imagen": "imgs/whiskies/johnnieBlue.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 18,
+            "nombre": "Jack Daniels",
+            "precio": 1500,
+            "imagen": "imgs/whiskies/jackDanielsClassic.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 19,
+            "nombre": "Jameson",
+            "precio": 1200,
+            "imagen": "imgs/whiskies/jameson.png",
+            "cantidad": 1
+        },
+        {
+            "id": 20,
+            "nombre": "Buchanan's",
+            "precio": 4500,
+            "imagen": "imgs/whiskies/buchanans.jpg",
+            "cantidad": 1
+        }
+    ],
+    "variados": [
+
+        {
+            "id": 21,
+            "nombre": "Vodka Absolut",
+            "precio": 1200,
+            "imagen": "imgs/variados/vodkaAbsolut.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 22,
+            "nombre": "Ron Havana",
+            "precio": 850,
+            "imagen": "imgs/variados/ronHavana.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 23,
+            "nombre": "Bailey's",
+            "precio": 750,
+            "imagen": "imgs/variados/baileys.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 24,
+            "nombre": "Vodka Grey Goose",
+            "precio": 1700,
+            "imagen": "imgs/variados/greyGoose.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 25,
+            "nombre": "Champagne Dom Perignon",
+            "precio": 10000,
+            "imagen": "imgs/variados/champagneDomPerignon.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 26,
+            "nombre": "Jagermeister",
+            "precio": 1050,
+            "imagen": "imgs/variados/jagermeister.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 27,
+            "nombre": "Gin Bombay",
+            "precio": 1100,
+            "imagen": "imgs/variados/ginBombay.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 28,
+            "nombre": "Gin Tanqueray",
+            "precio": 1340,
+            "imagen": "imgs/variados/ginTanqueray.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 29,
+            "nombre": "Licor 43",
+            "precio": 1300,
+            "imagen": "imgs/variados/licor43.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 30,
+            "nombre": "Fernet Branca",
+            "precio": 550,
+            "imagen": "imgs/variados/fernetBranca.jpg",
+            "cantidad": 1
+        }
+    ],
+    "sinAlcohol": [
+
+        {
+            "id": 31,
+            "nombre": "Coca Cola",
+            "precio": 80,
+            "imagen": "imgs/sin_alcohol/cocaCola.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 32,
+            "nombre": "Pepsi",
+            "precio": 70,
+            "imagen": "imgs/sin_alcohol/pepsi.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 33,
+            "nombre": "Fanta",
+            "precio": 75,
+            "imagen": "imgs/sin_alcohol/fanta.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 34,
+            "nombre": "Sprite",
+            "precio": 75,
+            "imagen": "imgs/sin_alcohol/sprite.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 35,
+            "nombre": "Malta Pilsen",
+            "precio": 120,
+            "imagen": "imgs/sin_alcohol/maltaPilsen.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 36,
+            "nombre": "Pomelo Paso de los toros",
+            "precio": 69,
+            "imagen": "imgs/sin_alcohol/pasoDeLosToros.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 37,
+            "nombre": "Mirinda",
+            "precio": 70,
+            "imagen": "imgs/sin_alcohol/mirinda.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 38,
+            "nombre": "Jugo Citric Naranja",
+            "precio": 77,
+            "imagen": "imgs/sin_alcohol/citricNaranja.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 39,
+            "nombre": "7up",
+            "precio": 70,
+            "imagen": "imgs/sin_alcohol/7up.jpg",
+            "cantidad": 1
+        },
+        {
+            "id": 40,
+            "nombre": "Schweppes Citrus",
+            "precio": 100,
+            "imagen": "imgs/sin_alcohol/schweppes.jpg",
+            "cantidad": 1
+        }
+    ]
+}
