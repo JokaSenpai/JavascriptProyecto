@@ -2,6 +2,9 @@ const GETJSON = "./chupe.json";
 let precio = 0;
 const precioTotal = document.getElementById("precioTotal");
 let bodyModal = document.getElementById("carrito-body");
+let carroNumero = document.getElementById("carroNumero");
+let carNum = 22;
+let botonContacto = document.getElementById("btn-contacto");
 
 
 function obtenerData() {
@@ -48,8 +51,8 @@ function postearData() {
             showConfirmButton: false,
             timer: 1500
           })
-          precio+=cerveza.precio;
-          console.log(precio);
+
+          calcularTotal();
           comprobarElementos(cerveza);
 
 
@@ -87,27 +90,7 @@ function postearData() {
             timer: 1500
           })
           comprobarElementos(whisky);
-
-          //Agregando un whisky al carrito
-
-          document.getElementById("carrito-body").innerHTML += `
-                    <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="${whisky.imagen}" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">${whisky.nombre}</h5>
-                          <p class="card-text">Precio: $${whisky.precio}</p>
-                          <p class="card-text">Cantidad: ${whisky.cantidad}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    `
-
-          // Final Whisky agregado
+          calcularTotal();
         })
 
       })
@@ -140,25 +123,7 @@ function postearData() {
             timer: 1500
           })
           comprobarElementos(variado);
-
-          // Agregando un variado al carrito
-          document.getElementById("carrito-body").innerHTML += `
-                    <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="${variado.imagen}" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">${variado.nombre}</h5>
-                          <p class="card-text">Precio: $${variado.precio}</p>
-                          <p class="card-text">Cantidad: ${variado.cantidad}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    `
-          // Final variado agregado
+          calcularTotal();
         })
 
 
@@ -191,27 +156,8 @@ function postearData() {
             timer: 1500
           })
 
-          renderizarPrecio(bebida);
           comprobarElementos(bebida);
-
-          // Agregando una bebida sin alcohol al carrito
-          document.getElementById("carrito-body").innerHTML += `
-                    <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="${bebida.imagen}" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">${bebida.nombre}</h5>
-                          <p class="card-text">Precio: $${bebida.precio}</p>
-                          <p class="card-text">Cantidad: ${bebida.cantidad} </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    `
-          // Final bebida sin alcohol agregada
+          calcularTotal();
         })
 
       })
@@ -278,11 +224,13 @@ finalizarCompra.addEventListener("click", () => {
 function comprobarElementos(item) {
   if (carritoCompra.some((elemento) => elemento.id === item.id)) {
     item.cantidad++;
+    conteoProductos++;
     renderizarCarrito();
     console.log("Se agrego otro producto que ya se encontraba en el carrito");
     console.log(carritoCompra);
   } else {
     carritoCompra.push(item);
+    conteoProductos++;
     renderizarCarrito();
     console.log("Se agrego la primera bebida de esta marca al carrito");
     console.log(carritoCompra);
@@ -319,10 +267,10 @@ function renderizarCarrito() {
                     `
 
    
-    renderizarPrecio();
+    calcularTotal();
 
   })
-
+  calcularTotal();
   agregarCantidad();
   disminuirCantidad();
   meterCarritoLocal("carroJson", JSON.stringify(carritoCompra));
@@ -338,7 +286,8 @@ function agregarCantidad() {
         item.cantidad++;
         console.log("se esta sumando");
         renderizarCarrito();
-        renderizarPrecio(item);
+        calcularTotal();
+        conteoProductos++;
       }
       else {
         Swal.fire({
@@ -359,9 +308,11 @@ function disminuirCantidad() {
       console.log("entro aca");
       if (item.cantidad > 0) {
         item.cantidad--;
+        conteoProductos--;
         console.log("se esta restando");
         renderizarCarrito();
         renderizarPrecio(item);
+        calcularTotal();
       }
       else {
         Swal.fire({
@@ -392,10 +343,29 @@ if (recuperarCarritoLocal) {
   renderizarCarrito();
 }
 
-function renderizarPrecio (item){
-  precioTotal.innerHTML=`El precio total es de: ${precio}`
+
+
+function calcularTotal(){
+
+  let total = carritoCompra.reduce((acc, ite)=>acc + ite.precio * ite.cantidad ,0)
+
+ precioTotal.innerHTML = `<h6>El precio total es : $${total}</h6>`
+  ;
 }
 
-renderizarPrecio();
+// interaccion el boton del formulario de contacto
 
 
+botonContacto.addEventListener("click",()=>{
+  console.log("entro xd");
+
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Tu mensaje ha sido enviado correctamente',
+    showConfirmButton: false,
+    timer: 1500
+  })
+})
+
+carroNumero.innerHTML=`<p>${conteoProductos}</p>`;

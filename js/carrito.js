@@ -1,8 +1,8 @@
-const carritoCompra = []; 
+const carritoCompra = recuperarCarritoLocal || []; 
 const carrito = document.getElementById("carrito");
-let carNum = 0;
-
-
+let meterConteoLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+let recuperarConteoLocal = JSON.parse(localStorage.getItem("conteoLocal"));
+let conteoProductos =recuperarConteoLocal || 0;
 
 
 

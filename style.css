@@ -293,3 +293,31 @@ display: flex;
         left: 20%;
       }
       
+#precioTotal{
+    text-align:center;
+}
+
+.simbolo img{
+    width: 40px;
+}
+.imgContact{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.imgContact img{
+    width: 650px;
+}
+.formu{
+    display:flex;
+    /* width: 600px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.formu form{
+width: 650px;
+}
+.h1-contact{
+    text-align: center;
+}
